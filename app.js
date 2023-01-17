@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ['https://etecube-assigment-frontend.onrender.com', 'https://etecube-assignment-backend.onrender.com'],
+    origin: ['http://localhost:3000', 'http://localhost:3001', 'https://etecube-assigment-frontend.onrender.com', 'https://etecube-assignment-backend.onrender.com'],
   })
 );
 app.use((req, res, next) => {
